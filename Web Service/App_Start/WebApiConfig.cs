@@ -13,7 +13,7 @@ namespace Web_Service
             var cors = new EnableCorsAttribute("http://cookbookweb.apphb.com", "*", "*");
             config.EnableCors(cors);
 
-            //config.EnableCors(new EnableCorsAttribute("http://localhost:1188", "*", "*"));
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
 
             config.Routes.MapHttpRoute(
                name: "ActionApi",
